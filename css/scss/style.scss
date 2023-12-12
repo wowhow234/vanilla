@@ -1,12 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import "./font.scss";
+@import "./custom.css";
+
 body {
   background: url("/image/christmas.jpg") fixed;
   background-size: cover;
   font-family: "Nanum Myeongjo", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
 }
 
 .hidden {
   display: none;
+}
+
+.button {
+  border-radius: 1.5em;
 }
 
 #greeting {
@@ -16,8 +26,8 @@ body {
 
 .clock {
   border: 1px solid white;
+  span {
+    color: white;
+    font-size: 7em;
+  }
 }
-.clock span {
-  color: white;
-  font-size: 7em;
-}/*# sourceMappingURL=style.css.map */
