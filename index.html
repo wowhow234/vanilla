@@ -7,36 +7,78 @@
     <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="로그인" />
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="할 일을 적어주세요" />
-    </form>
-    <ul id="todo-list"></ul>
+    <div class="container">
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="로그인" />
+      </form>
+      <h2 id="clock">00:00:00</h2>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input type="text" placeholder="할 일을 적어주세요" />
+      </form>
+      <ul id="todo-list"></ul>
 
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-      <span></span>
+      <div id="weather">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div>
+        <iframe
+          width="100%"
+          height="450"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734084444&color=%23f03c3c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/meredith-greenhow"
+            title="Redluv46"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Redluv46</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/meredith-greenhow/sets/lofi-christmas"
+            title="LoFi Christmas!"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >LoFi Christmas!</a
+          >
+        </div>
+      </div>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+    <!-- <script src="js/background.js"></script> -->
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
   </body>
