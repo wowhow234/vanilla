@@ -15,6 +15,7 @@ body {
 
 .mainlogin {
   border: 1px solid blue;
+  display: flex;
   justify-content: center;
 }
 
@@ -24,12 +25,15 @@ body {
   width: 300px;
   background-color: transparent;
   outline: none;
+  color: white;
 }
 .input::-moz-placeholder {
-  color: black;
+  color: white;
+  font-weight: 400;
 }
 .input::placeholder {
-  color: black;
+  color: white;
+  font-weight: 400;
 }
 
 .button {
@@ -54,6 +58,10 @@ body {
 #greeting {
   color: white;
   font-size: 7em;
+}
+
+.maintodolist {
+  border: 1px solid blue;
 }
 
 .clock {

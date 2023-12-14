@@ -16,6 +16,7 @@ body {
 
 .mainlogin {
   border: 1px solid blue;
+  display: flex;
   justify-content: center;
 }
 
@@ -25,8 +26,10 @@ body {
   width: 300px;
   background-color: transparent;
   outline: none;
+  color: white;
   &::placeholder {
-    color: black;
+    color: white;
+    font-weight: 400;
   }
 }
 
@@ -52,6 +55,10 @@ body {
 #greeting {
   color: white;
   font-size: 7em;
+}
+
+.maintodolist {
+  border: 1px solid blue;
 }
 
 .clock {
