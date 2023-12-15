@@ -57,15 +57,54 @@ body {
 
 #greeting {
   color: white;
-  font-size: 7em;
+  font-size: 5em;
 }
 
 .maintodolist {
   border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-form {
+  background-color: beige;
+}
+
+.todo-list {
+  border: 1px solid red;
+  margin-top: 10px;
+}
+
+ul {
+  border: 1px solid blue;
+  width: 300px;
+  list-style-image: url(/image/icon.png);
+}
+
+li {
+  color: black;
+  width: 100%;
+  border-bottom: 1px dotted white;
+  border: 1px solid saddlebrown;
+  margin-bottom: 5px;
+  position: relative;
+}
+li span {
+  border: 1px solid white;
+  position: absolute;
+  line-height: 0.5;
+}
+li button {
+  border: none;
+  background-color: transparent;
+  float: right;
+  line-height: 0.5;
 }
 
 .clock {
   border: 1px solid white;
+  text-align: center;
 }
 .clock span {
   color: white;

@@ -9,6 +9,7 @@
 
   </head>
   <body>
+
     <div class="container">
       <div class="clock">
         <span id="clock">00:00:00</span>
@@ -29,16 +30,18 @@
       <h1 id="greeting" class="hidden"></h1>
       <div class="maintodolist">
 
-        <form id="todo-form">
+        <form id="todo-form" class="todo-form">
           <input type="text" placeholder="할 일을 적어주세요" class="input"/>
           <button  class="button">ENTER</button>
         </form>
-        <ul id="todo-list"></ul>
-      </div>
+        <div class="todo-list">
+          <ul id="todo-list"></ul>
+        </div>
         
         <div id="quote">
-        <span></span>
-        <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       
       <div id="weather">
@@ -56,5 +59,14 @@
     <!-- <script src="js/background.js"></script> -->
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
+    <script>
+       var sf = new Snowflakes({
+          color: "#ffffff",
+          count: 75,
+          minOpacity: 0.2,
+          maxOpacity: 0.6
+        });
+    </script>
   </body>
 </html>
