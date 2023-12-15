@@ -9,21 +9,30 @@ function GeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       const weather = document.querySelector("#weather span:first-child");
-      const weatherIcon = document.createElement("img");
-      const weatherIconCode = data.weather[0].icon;
-      console.log(weatherIconCode);
-      weatherIcon.src = `image/icons/${weatherIconCode}.png`;
-      document.body.appendChild(weatherIcon);
-
-      const temp = weather.nextElementSibling;
-      const city = document.querySelector("#weather span:last-child");
-
       weather.innerText = `${data.weather[0].main}`;
 
+      // ---------------------------- 날씨 아이콘 넣기
+      //1. id가 weather인 부모 얻기
+      const divweather = document.querySelector("#weather");
+      // console.log("날씨부모갖고왔나 ⭕--->", divweather);
+
+      //2. 부모 내의 span 요소들 중에서 중간에꺼 가져오기
+      // const middle = document.querySelector("#weather span:nth-child(2)");
+      // console.log("중간span 갖고오기⭕ --->", middle);
+
+      //3. 새로 삽입할 아이콘 생성
+      const weatherIcon = document.createElement("img");
+      const weatherIconCode = data.weather[0].icon;
+      weatherIcon.src = `image/icons/${weatherIconCode}.png`;
+
+      const temp = document.querySelector("#weather span:nth-child(2)");
       temp.innerText = `${data.main.temp} ℃`;
+
+      //4. 기온 앞에 아이콘 삽입
+      divweather.insertBefore(weatherIcon, temp);
+
+      const city = document.querySelector("#weather span:last-child");
       city.innerText = data.name;
-      // console.log("데이터", data);
-      console.log("아이콘", data.weather[0].icon);
     });
 }
 

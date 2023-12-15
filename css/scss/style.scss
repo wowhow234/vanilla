@@ -107,3 +107,13 @@ li {
     font-size: 7em;
   }
 }
+
+#weather {
+  display: flex;
+  span {
+    font-size: 20px;
+  }
+  img {
+    border: 1px solid white;
+  }
+}

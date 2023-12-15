@@ -109,4 +109,14 @@ li button {
 .clock span {
   color: white;
   font-size: 7em;
+}
+
+#weather {
+  display: flex;
+}
+#weather span {
+  font-size: 20px;
+}
+#weather img {
+  border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */
