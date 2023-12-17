@@ -15,7 +15,7 @@ body {
 }
 
 .mainlogin {
-  border: 1px solid blue;
+  border: 3px solid rgb(204, 204, 255);
   display: flex;
   justify-content: center;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .maintodolist {
-  border: 1px solid blue;
+  border: 2px solid rgb(255, 91, 247);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -110,10 +110,21 @@ li {
 
 #weather {
   display: flex;
+  border: 1px solid yellowgreen;
   span {
     font-size: 20px;
   }
   img {
     border: 1px solid white;
   }
+}
+
+.todo-weather-wrapper {
+  border: 3px solid slateblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainweather {
+  border: 3px solid white;
 }

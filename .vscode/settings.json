@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../"
+    }
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // "liveSassCompile.settings.includeItems": ["/css/scss/ *.scss"]
+}

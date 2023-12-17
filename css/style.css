@@ -3,21 +3,131 @@ body {
   background: url("/image/christmas.jpg") fixed;
   background-size: cover;
   font-family: "Nanum Myeongjo", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
 }
 
 .hidden {
   display: none;
 }
 
+.mainlogin {
+  border: 3px solid rgb(204, 204, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid white;
+  width: 300px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.input::-moz-placeholder {
+  color: white;
+  font-weight: 400;
+}
+.input::placeholder {
+  color: white;
+  font-weight: 400;
+}
+
+.button {
+  border-radius: 30px;
+  border: 1px solid white;
+  font-size: 20x;
+  padding: 10px 20px;
+  background-color: white;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  color: black;
+  transition: all 0.4s;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  background-color: transparent;
+  color: white;
+}
+
 #greeting {
   color: white;
-  font-size: 7em;
+  font-size: 5em;
+}
+
+.maintodolist {
+  border: 2px solid rgb(255, 91, 247);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-form {
+  background-color: beige;
+}
+
+.todo-list {
+  border: 1px solid red;
+  margin-top: 10px;
+}
+
+ul {
+  border: 1px solid blue;
+  width: 300px;
+  list-style-image: url(/image/icon.png);
+}
+
+li {
+  color: black;
+  width: 100%;
+  border-bottom: 1px dotted white;
+  border: 1px solid saddlebrown;
+  margin-bottom: 5px;
+  position: relative;
+}
+li span {
+  border: 1px solid white;
+  position: absolute;
+  line-height: 0.5;
+}
+li button {
+  border: none;
+  background-color: transparent;
+  float: right;
+  line-height: 0.5;
 }
 
 .clock {
   border: 1px solid white;
+  text-align: center;
 }
 .clock span {
   color: white;
   font-size: 7em;
+}
+
+#weather {
+  display: flex;
+  border: 1px solid yellowgreen;
+}
+#weather span {
+  font-size: 20px;
+}
+#weather img {
+  border: 1px solid white;
+}
+
+.todo-weather-wrapper {
+  border: 3px solid slateblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainweather {
+  border: 3px solid white;
 }/*# sourceMappingURL=style.css.map */

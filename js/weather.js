@@ -26,7 +26,8 @@ function GeoOk(position) {
       weatherIcon.src = `image/icons/${weatherIconCode}.png`;
 
       const temp = document.querySelector("#weather span:nth-child(2)");
-      temp.innerText = `${data.main.temp} ℃`;
+      temp.innerText = Math.round(`${data.main.temp}`) + " ℃";
+      console.log(Math.round(`${data.main.temp}`));
 
       //4. 기온 앞에 아이콘 삽입
       divweather.insertBefore(weatherIcon, temp);
