@@ -6,18 +6,33 @@
   border: 4px solid rgb(255, 104, 104);
 }
 
-.ball-wrapper {
+.ball-wrapper:nth-child(odd) {
   float: left;
   margin: 0px 40px;
   border: 2px solid white;
-  animation: motion 1s linear 0s infinite alternate;
+  animation: motion 2s linear 0s infinite alternate;
 }
 @keyframes motion {
-  0% {
+  from {
     margin-top: 0px;
   }
-  100% {
+  to {
     margin-top: 10px;
+  }
+}
+.ball-wrapper:nth-child(even) {
+  float: left;
+  margin: 0px 40px;
+  border: 2px solid white;
+  animation: motion 2s linear 0s infinite alternate;
+  animation-direction: alternate-reverse;
+}
+@keyframes motion {
+  from {
+    margin-top: 10px;
+  }
+  to {
+    margin-top: 0px;
   }
 }
 
