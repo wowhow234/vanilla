@@ -1,18 +1,18 @@
 .ornament {
-  border: 5px solid pink;
   width: auto;
-  height: 400px;
+  height: 320px;
 }
 
 .ornament-the-wrap {
-  width: 1000px;
-  height: auto;
+  // width: 100%;
+  height: 100%;
   margin: auto;
   overflow: hidden;
-  border: 4px solid rgb(255, 104, 104);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
 }
 
 @import "./mixin.scss";
@@ -22,44 +22,28 @@
     @include ball-animation {
       @keyframes motion {
         from {
-          margin-top: 0px;
+          margin-top: -10px;
         }
         to {
-          margin-top: 10px;
+          margin-top: 0px;
         }
       }
     }
   }
   &:nth-child(even) {
     @include ball-animation {
-      // margin-top: 10px;
-      // top: 10px;
       animation-direction: alternate-reverse;
-      @keyframes motion {
-        from {
-          margin-top: 10px;
-        }
-        to {
-          margin-top: 0px;
-        }
-      }
+      // @keyframes motion {
+      //   from {
+      //     margin-top: 0px;
+      //   }
+      //   to {
+      //     margin-top: 10px;
+      //   }
+      // }
     }
   }
 }
-
-// .ball-wrapper:nth-child(even) {
-//   @include ball-animation {
-//     margin-top: 10px;
-//     @keyframes motion {
-//       from {
-//         margin-top: 10px;
-//       }
-//       to {
-//         margin-top: 0px;
-//       }
-//     }
-//   }
-// }
 
 .ring {
   height: 15px;
@@ -68,8 +52,6 @@
   border: 2px solid #f99d24;
   border-radius: 45%;
   position: relative;
-  // left: 76.4px;
-  // top: 12px;
   margin: auto;
 }
 
@@ -77,10 +59,7 @@
   width: 7.5px;
   position: relative;
   background-color: #f99d24;
-  height: 200px;
-  // left: 80px;
-  // top: 12.4px;
-  // margin-top: -20px;
+  height: 150px;
   margin: auto;
 }
 
@@ -89,7 +68,6 @@
   width: 30px;
   background-color: #f99d24;
   position: relative;
-  // left: 65px;
   top: -7.5px;
   border-radius: 4px;
   margin: auto;
@@ -107,24 +85,28 @@
 
 .red-ball {
   @include color-ball {
-    background-color: #6b2f36;
+    background: linear-gradient(320deg, #6f0606, #ff9898);
+    box-shadow: inset -8px -8px 13px 5px rgb(159 25 25);
   }
 }
 
 .green-ball {
   @include color-ball {
-    background-color: #9cd6ac;
+    background: linear-gradient(320deg, #034120, #9cf7bb);
+    box-shadow: inset -8px -8px 13px 5px rgb(32 121 70);
   }
 }
 
 .blue-ball {
   @include color-ball {
-    background-color: #475479;
+    background: linear-gradient(320deg, #06076f, #b2cdff);
+    box-shadow: inset -8px -8px 13px 5px rgb(58 66 147);
   }
 }
 
 .white-ball {
   @include color-ball {
-    background-color: #f9f9f9;
+    background: linear-gradient(320deg, #737373, #ffffff);
+    box-shadow: inset -8px -8px 13px 5px rgb(167 167 167);
   }
 }

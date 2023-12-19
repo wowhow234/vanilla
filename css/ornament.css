@@ -1,48 +1,34 @@
 .ornament {
-  border: 5px solid pink;
   width: auto;
-  height: 400px;
+  height: 320px;
 }
 
 .ornament-the-wrap {
-  width: 1000px;
-  height: auto;
+  height: 100%;
   margin: auto;
   overflow: hidden;
-  border: 4px solid rgb(255, 104, 104);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
 }
 
 .ball-wrapper:nth-child(odd) {
   float: left;
-  margin: 0px 40px;
-  border: 2px solid white;
+  margin: -10px 40px 0 40px;
   animation: motion 2s linear 0s infinite alternate;
 }
 @keyframes motion {
   from {
-    margin-top: 0px;
+    margin-top: -10px;
   }
   to {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 .ball-wrapper:nth-child(even) {
   float: left;
-  margin: 0px 40px;
-  border: 2px solid white;
+  margin: -10px 40px 0 40px;
   animation: motion 2s linear 0s infinite alternate;
   animation-direction: alternate-reverse;
-}
-@keyframes motion {
-  from {
-    margin-top: 10px;
-  }
-  to {
-    margin-top: 0px;
-  }
 }
 
 .ring {
@@ -59,7 +45,7 @@
   width: 7.5px;
   position: relative;
   background-color: #f99d24;
-  height: 200px;
+  height: 150px;
   margin: auto;
 }
 
@@ -80,7 +66,8 @@
   position: relative;
   margin: auto;
   top: -20px;
-  background-color: #6b2f36;
+  background: linear-gradient(320deg, #6f0606, #ff9898);
+  box-shadow: inset -8px -8px 13px 5px rgb(159, 25, 25);
 }
 
 .green-ball {
@@ -90,7 +77,8 @@
   position: relative;
   margin: auto;
   top: -20px;
-  background-color: #9cd6ac;
+  background: linear-gradient(320deg, #034120, #9cf7bb);
+  box-shadow: inset -8px -8px 13px 5px rgb(32, 121, 70);
 }
 
 .blue-ball {
@@ -100,7 +88,8 @@
   position: relative;
   margin: auto;
   top: -20px;
-  background-color: #475479;
+  background: linear-gradient(320deg, #06076f, #b2cdff);
+  box-shadow: inset -8px -8px 13px 5px rgb(58, 66, 147);
 }
 
 .white-ball {
@@ -110,5 +99,6 @@
   position: relative;
   margin: auto;
   top: -20px;
-  background-color: #f9f9f9;
+  background: linear-gradient(320deg, #737373, #ffffff);
+  box-shadow: inset -8px -8px 13px 5px rgb(167, 167, 167);
 }/*# sourceMappingURL=ornament.css.map */

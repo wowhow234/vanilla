@@ -1,7 +1,6 @@
 @mixin ball-animation {
   float: left;
-  margin: 0px 40px;
-  border: 2px solid white;
+  margin: -10px 40px 0 40px;
   animation: motion 2s linear 0s infinite alternate;
   @content;
 }

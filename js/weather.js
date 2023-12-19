@@ -14,11 +14,9 @@ function GeoOk(position) {
       // ---------------------------- 날씨 아이콘 넣기
       //1. class가 w-states인 부모 얻기
       const divweather = document.querySelector(".w-states");
-      // console.log("날씨부모갖고왔나 ⭕--->", divweather);
 
       //2. 부모 내의 span 요소들 중에서 중간에꺼 가져오기
-      // const middle = document.querySelector("#weather span:nth-child(2)");
-      // console.log("중간span 갖고오기⭕ --->", middle);
+      // document.querySelector("#weather span:nth-child(2)");
 
       //3. 새로 삽입할 아이콘 생성
       const weatherIcon = document.createElement("img");
@@ -28,13 +26,11 @@ function GeoOk(position) {
       const temp = document.querySelector(".w-states span:last-child");
       temp.innerText = Math.round(`${data.main.temp}`) + " ℃";
       console.log(Math.round(`${data.main.temp}`));
-      console.log("기온외않나와--->", temp);
 
       //4. 기온 앞에 아이콘 삽입
       divweather.insertBefore(weatherIcon, temp);
 
       const city = document.querySelector("#weather").lastElementChild;
-      console.log("도시외안나와---->", city);
       city.innerText = data.name;
     });
 }

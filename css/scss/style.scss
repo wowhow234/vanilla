@@ -1,14 +1,22 @@
 @import "./font.scss";
 @import "./mixin.scss";
 
+.container {
+  width: 1340px;
+}
 body {
-  background: url("/image/christmas.jpg") fixed;
+  background-image: linear-gradient(
+      rgb(255 255 255 / 0%),
+      rgb(255 255 255 / 20%)
+    ),
+    url(/image/christmas.jpg);
+  background-attachment: fixed;
   background-size: cover;
   font-family: "Nanum Myeongjo", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .hidden {
@@ -16,7 +24,6 @@ body {
 }
 
 .mainlogin {
-  border: 3px solid rgb(204, 204, 255);
   display: flex;
   justify-content: center;
 }
@@ -55,7 +62,8 @@ body {
 
 #greeting {
   color: white;
-  font-size: 5em;
+  font-size: 3em;
+  text-align: center;
 }
 
 .maintodolist {
@@ -63,8 +71,16 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   @include before;
+  input {
+    border-bottom: 1px dotted rgb(107, 107, 107);
+    color: black;
+    &::placeholder {
+      color: black;
+    }
+  }
 }
 
 // .maintodolist::before {
@@ -79,31 +95,26 @@ body {
 // }
 
 .todo-form {
-  background-color: beige;
+  background-color: transparent;
   z-index: 100;
 }
 
 .todo-list {
-  border: 1px solid red;
   margin-top: 10px;
   z-index: 100;
 }
 
 ul {
-  border: 1px solid blue;
   width: 300px;
   list-style-image: url(/image/icon.png);
 }
 
 li {
-  color: black;
   width: 100%;
-  border-bottom: 1px dotted white;
-  border: 1px solid saddlebrown;
+  border-bottom: 1px dotted rgb(107, 107, 107);
   margin-bottom: 5px;
   position: relative;
   span {
-    border: 1px solid white;
     position: absolute;
     line-height: 0.5;
   }
@@ -116,7 +127,6 @@ li {
 }
 
 .clock {
-  border: 1px solid white;
   text-align: center;
   span {
     color: white;
@@ -125,7 +135,6 @@ li {
 }
 
 #quote {
-  border: 1px solid black;
   z-index: 100;
   position: relative;
   display: flex;
@@ -136,26 +145,20 @@ li {
 #weather {
   display: flex;
   z-index: 100;
-  border: 1px solid yellowgreen;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
   span {
     font-size: 20px;
-    &:nth-child(3) {
-      border: 1px solid black;
-    }
-  }
-  img {
-    border: 1px solid white;
   }
 }
 
 .w-states {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
 }
 
 .todo-weather-wrapper {
-  border: 3px solid slateblue;
   display: flex;
   justify-content: space-around;
 }
