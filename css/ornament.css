@@ -1,9 +1,18 @@
-#ornament-the-wrap {
+.ornament {
+  border: 5px solid pink;
+  width: auto;
+  height: 400px;
+}
+
+.ornament-the-wrap {
   width: 1000px;
-  margin: auto;
   height: auto;
+  margin: auto;
   overflow: hidden;
   border: 4px solid rgb(255, 104, 104);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .ball-wrapper:nth-child(odd) {
