@@ -21,7 +21,7 @@ function GeoOk(position) {
       //3. 새로 삽입할 아이콘 생성
       const weatherIcon = document.createElement("img");
       const weatherIconCode = data.weather[0].icon;
-      weatherIcon.src = `image/icons/${weatherIconCode}.png`;
+      weatherIcon.src = `../image/icons/${weatherIconCode}.png`;
 
       const temp = document.querySelector(".w-states span:last-child");
       temp.innerText = Math.round(`${data.main.temp}`) + " ℃";
